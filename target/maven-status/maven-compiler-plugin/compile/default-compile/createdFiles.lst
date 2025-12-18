@@ -20,6 +20,7 @@ view\FormKK.class
 view\FormKTP$6.class
 view\Home$2.class
 view\FormLogin$2.class
+view\FormKK$7.class
 controller\dataKKController.class
 model\dataKK.class
 view\FormKTP$1.class

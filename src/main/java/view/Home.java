@@ -14,7 +14,7 @@ public class Home extends javax.swing.JFrame {
     
     public Home() {
         initComponents();
-        setSize(800,450);
+        setSize(955,479);
         setLocationRelativeTo(null);
     }
 
@@ -26,53 +26,40 @@ public class Home extends javax.swing.JFrame {
         btnKtp = new javax.swing.JButton();
         btnKK = new javax.swing.JButton();
         btnLogout = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnKtp.setFont(new java.awt.Font("Yu Gothic UI", 1, 24)); // NOI18N
         btnKtp.setText("FORM KTP");
         btnKtp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnKtpActionPerformed(evt);
             }
         });
+        getContentPane().add(btnKtp, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, -1, -1));
 
+        btnKK.setFont(new java.awt.Font("Yu Gothic UI", 1, 25)); // NOI18N
         btnKK.setText("FORM KK");
         btnKK.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnKKActionPerformed(evt);
             }
         });
+        getContentPane().add(btnKK, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 170, 160, -1));
 
+        btnLogout.setFont(new java.awt.Font("Yu Gothic UI", 1, 20)); // NOI18N
         btnLogout.setText("LOG OUT");
         btnLogout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLogoutActionPerformed(evt);
             }
         });
+        getContentPane().add(btnLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 290, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(65, 65, 65)
-                .addComponent(btnKtp)
-                .addGap(18, 18, 18)
-                .addComponent(btnKK)
-                .addGap(31, 31, 31)
-                .addComponent(btnLogout)
-                .addContainerGap(41, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(207, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnKtp)
-                    .addComponent(btnKK)
-                    .addComponent(btnLogout))
-                .addGap(70, 70, 70))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Desain/gambar5.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -116,5 +103,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton btnKK;
     private javax.swing.JButton btnKtp;
     private javax.swing.JButton btnLogout;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
